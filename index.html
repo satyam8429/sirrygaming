@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sirry Gaming</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #ff3c3c;
+      --bg-dark: #0b0b0b;
+      --text-light: #f5f5f5;
+      --card-bg: #1a1a1a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://i.imgur.com/2yaf2wb.jpg') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      color: var(--primary);
+      text-shadow: 2px 2px 20px black;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .subscribe-btn {
+      background-color: var(--primary);
+      color: white;
+      padding: 15px 35px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 50px;
+      margin-top: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .subscribe-btn:hover {
+      background-color: #e60000;
+    }
+
+    .youtube-section iframe {
+      width: 90%;
+      max-width: 900px;
+      height: 480px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 0 25px rgba(255, 60, 60, 0.6);
+    }
+
+    footer {
+      background-color: #111;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="content">
+      <h1>Sirry Gaming</h1>
+    </div>
+  </header>
+
+  <section>
+    <div class="content">
+      <h2>Welcome to Sirry Gaming</h2>
+      <p>Official website of Sirry Gaming – Your daily dose of Free Fire action, live streams, and gaming videos.</p>
+      <a href="https://www.youtube.com/@sirrygaming" target="_blank">
+        <button class="subscribe-btn">Subscribe on YouTube</button>
+      </a>
+    </div>
+  </section>
+
+  <section class="youtube-section">
+    <div class="content">
+      <h2>Latest Upload</h2>
+      <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=sirrygaming" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Sirry Gaming. All rights reserved.
+  </footer>
+</body>
+</html>
